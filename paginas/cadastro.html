@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/icone.png">
+    <link rel="stylesheet" type="text/css" href="cadastro.css" media="">
+    <script src="./script.js"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="campo">
+        <h1 id="titulo">Página de Cadastro</h1>
+        <p id="subtitulo">Preencha com seus dados</p>
+        <br>
+    </div>
+
+    <form name="formulario" onsubmit="return validarCadastro()">
+        <div class="campo">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="email" id="email" size="25" required>
+        </div>
+
+        <div class="campo">
+            <label for="nome"><strong>Nome:</strong></label>
+            <input type="text" name="nome" id="nome" size="35" required> 
+        </div>
+
+        <div class="campo">
+            <label for="sexo"><strong>Sexo:</strong></label>
+            <select id="sexo">
+                <option selected disabled value="">Selecione</option>
+                <option>Feminino</option>
+                <option>Masculino</option>
+                <option>Indefinido</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="curso"><strong>Curso:</strong></label>
+            <select id="curso">
+                <option selected disabled value="">Selecione</option>
+                <option>Curso Técnico em Informática</option>
+                <option>Curso Técnico em Química</option>
+                <option>Curso Técnico em Florestas</option>
+            </select>
+        </div>
+        
+        <div class="campo">
+            <label for="ende"><strong>Endereço:</strong></label>
+            <input type="text" name="ende" id="ende" size="35" required>
+        </div>
+
+        <div class="campo">
+            <label for="comple"><strong>Complemento:</strong></label>
+            <input type="text" name="comple" id="comple" size="25" required>
+        </div>
+
+        <div class="campo">
+            <label for="cep"><strong>Cep:</strong></label>
+            <input type="text" name="cep" id="cep" size="10" required>
+        </div>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="municipio"><strong>Município:</strong></label>
+                <input type="text" name="municipio" id="municipio" required>
+            </div>
+
+            <div class="campo">
+                <label for="estado"><strong>Estado:</strong></label>
+                <select id="estado" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select>
+            </div>
+        </fieldset>
+        
+        <button class="botao" type="submit">Salvar</button>
+    </form>
+</body>
+</html>
